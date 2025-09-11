@@ -1,0 +1,618 @@
+local debugg = game.CoreGui:FindFirstChild("AudioLoggah")
+if debugg then
+	debugg:Destroy()
+end
+
+local Converted = {
+	["_AudioLoggah"] = Instance.new("ScreenGui");
+	["_MainFrame"] = Instance.new("Frame");
+	["_TitleBar"] = Instance.new("TextLabel");
+	["_LocalScript"] = Instance.new("LocalScript");
+	["_UITextSizeConstraint"] = Instance.new("UITextSizeConstraint");
+	["_InfoFrame"] = Instance.new("Frame");
+	["_Frame"] = Instance.new("Frame");
+	["_Header"] = Instance.new("TextLabel");
+	["_UITextSizeConstraint1"] = Instance.new("UITextSizeConstraint");
+	["_TXT"] = Instance.new("TextButton");
+	["_LocalScript1"] = Instance.new("LocalScript");
+	["_UITextSizeConstraint2"] = Instance.new("UITextSizeConstraint");
+	["_AudioInfo"] = Instance.new("Frame");
+	["_TXT1"] = Instance.new("TextLabel");
+	["_UITextSizeConstraint3"] = Instance.new("UITextSizeConstraint");
+	["_ID"] = Instance.new("TextBox");
+	["_UITextSizeConstraint4"] = Instance.new("UITextSizeConstraint");
+	["_GiveUp"] = Instance.new("ImageButton");
+	["_Text"] = Instance.new("TextLabel");
+	["_UITextSizeConstraint5"] = Instance.new("UITextSizeConstraint");
+	["_LocalScript2"] = Instance.new("LocalScript");
+	["_CopyID"] = Instance.new("ImageButton");
+	["_Text1"] = Instance.new("TextLabel");
+	["_UITextSizeConstraint6"] = Instance.new("UITextSizeConstraint");
+	["_LocalScript3"] = Instance.new("LocalScript");
+	["_AudioInfo2"] = Instance.new("Frame");
+	["_TXT2"] = Instance.new("TextLabel");
+	["_UITextSizeConstraint7"] = Instance.new("UITextSizeConstraint");
+	["_VALUE"] = Instance.new("TextBox");
+	["_UITextSizeConstraint8"] = Instance.new("UITextSizeConstraint");
+	["_AudioInfo3"] = Instance.new("Frame");
+	["_TXT3"] = Instance.new("TextLabel");
+	["_UITextSizeConstraint9"] = Instance.new("UITextSizeConstraint");
+	["_VALUE1"] = Instance.new("TextBox");
+	["_UITextSizeConstraint10"] = Instance.new("UITextSizeConstraint");
+	["_Credit"] = Instance.new("ImageButton");
+	["_Text2"] = Instance.new("TextLabel");
+	["_UITextSizeConstraint11"] = Instance.new("UITextSizeConstraint");
+	["_LocalScript4"] = Instance.new("LocalScript");
+	["_Icon"] = Instance.new("ImageLabel");
+	["_AudioList"] = Instance.new("ScrollingFrame");
+	["_UIListLayout"] = Instance.new("UIListLayout");
+	["_UIPadding"] = Instance.new("UIPadding");
+	["_DropShadowHolder"] = Instance.new("Frame");
+	["_DropShadow"] = Instance.new("ImageLabel");
+	["_RestoreDown"] = Instance.new("ImageButton");
+	["_Text3"] = Instance.new("TextLabel");
+	["_UITextSizeConstraint12"] = Instance.new("UITextSizeConstraint");
+	["_LocalScript5"] = Instance.new("LocalScript");
+}
+
+Converted["_AudioLoggah"].IgnoreGuiInset = true
+Converted["_AudioLoggah"].ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
+Converted["_AudioLoggah"].Name = "AudioLoggah"
+Converted["_AudioLoggah"].Parent = game.CoreGui
+
+Converted["_MainFrame"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_MainFrame"].BackgroundColor3 = Color3.fromRGB(225.00001698732376, 207.00001806020737, 164.00000542402267)
+Converted["_MainFrame"].BackgroundTransparency = 0.5
+Converted["_MainFrame"].BorderColor3 = Color3.fromRGB(17.00000088661909, 17.00000088661909, 17.00000088661909)
+Converted["_MainFrame"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_MainFrame"].Size = UDim2.new(0, 363, 0, 284)
+Converted["_MainFrame"].Name = "MainFrame"
+Converted["_MainFrame"].Parent = Converted["_AudioLoggah"]
+
+Converted["_TitleBar"].Text = "Audio Logger"
+Converted["_TitleBar"].TextScaled = true
+Converted["_TitleBar"].TextWrapped = true
+Converted["_TitleBar"].BackgroundColor3 = Color3.fromRGB(255, 244.0000158548355, 151.00000619888306)
+Converted["_TitleBar"].BorderColor3 = Color3.fromRGB(17.00000088661909, 17.00000088661909, 17.00000088661909)
+Converted["_TitleBar"].Size = UDim2.new(1, 0, 0, 24)
+Converted["_TitleBar"].Name = "TitleBar"
+Converted["_TitleBar"].Parent = Converted["_MainFrame"]
+
+Converted["_UITextSizeConstraint"].MaxTextSize = 8
+Converted["_UITextSizeConstraint"].Parent = Converted["_TitleBar"]
+
+Converted["_InfoFrame"].BackgroundColor3 = Color3.fromRGB(225.00001698732376, 207.00001806020737, 164.00000542402267)
+Converted["_InfoFrame"].BackgroundTransparency = 0.5
+Converted["_InfoFrame"].BorderColor3 = Color3.fromRGB(17.00000088661909, 17.00000088661909, 17.00000088661909)
+Converted["_InfoFrame"].Position = UDim2.new(0, 261, 0, 26)
+Converted["_InfoFrame"].Size = UDim2.new(0, 100, 0, 256)
+Converted["_InfoFrame"].Name = "InfoFrame"
+Converted["_InfoFrame"].Parent = Converted["_MainFrame"]
+
+Converted["_Frame"].BackgroundColor3 = Color3.fromRGB(173.00000488758087, 172.00000494718552, 175.00000476837158)
+Converted["_Frame"].BackgroundTransparency = 1
+Converted["_Frame"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
+Converted["_Frame"].Position = UDim2.new(0, 3, 0, 3)
+Converted["_Frame"].Size = UDim2.new(1, -6, 0, 0)
+Converted["_Frame"].Parent = Converted["_InfoFrame"]
+
+Converted["_Header"].Text = "Find Audios :"
+Converted["_Header"].TextScaled = true
+Converted["_Header"].TextWrapped = true
+Converted["_Header"].BackgroundColor3 = Color3.fromRGB(255, 214.00001764297485, 163.00000548362732)
+Converted["_Header"].BorderColor3 = Color3.fromRGB(17.00000088661909, 17.00000088661909, 17.00000088661909)
+Converted["_Header"].Size = UDim2.new(1, 0, 0, 16)
+Converted["_Header"].Name = "Header"
+Converted["_Header"].Parent = Converted["_Frame"]
+
+Converted["_UITextSizeConstraint1"].MaxTextSize = 8
+Converted["_UITextSizeConstraint1"].Parent = Converted["_Header"]
+
+Converted["_TXT"].Text = "Log Now"
+Converted["_TXT"].TextScaled = true
+Converted["_TXT"].TextWrapped = true
+Converted["_TXT"].Active = false
+Converted["_TXT"].BackgroundColor3 = Color3.fromRGB(225.00001698732376, 207.00001806020737, 164.00000542402267)
+Converted["_TXT"].BorderColor3 = Color3.fromRGB(17.00000088661909, 17.00000088661909, 17.00000088661909)
+Converted["_TXT"].Position = UDim2.new(0, 0, 0, 16)
+Converted["_TXT"].Selectable = false
+Converted["_TXT"].Size = UDim2.new(1, 0, 0, 16)
+Converted["_TXT"].Name = "TXT"
+Converted["_TXT"].Parent = Converted["_Frame"]
+
+Converted["_UITextSizeConstraint2"].MaxTextSize = 8
+Converted["_UITextSizeConstraint2"].Parent = Converted["_TXT"]
+
+Converted["_AudioInfo"].BackgroundColor3 = Color3.fromRGB(173.00000488758087, 172.00000494718552, 175.00000476837158)
+Converted["_AudioInfo"].BackgroundTransparency = 1
+Converted["_AudioInfo"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
+Converted["_AudioInfo"].Position = UDim2.new(0, 3, 0, 38)
+Converted["_AudioInfo"].Size = UDim2.new(1, -6, 0, 0)
+Converted["_AudioInfo"].Name = "AudioInfo"
+Converted["_AudioInfo"].Parent = Converted["_InfoFrame"]
+
+Converted["_TXT1"].Text = "Asset ID :"
+Converted["_TXT1"].TextScaled = true
+Converted["_TXT1"].TextWrapped = true
+Converted["_TXT1"].BackgroundColor3 = Color3.fromRGB(255, 214.00001764297485, 163.00000548362732)
+Converted["_TXT1"].BorderColor3 = Color3.fromRGB(17.00000088661909, 17.00000088661909, 17.00000088661909)
+Converted["_TXT1"].Size = UDim2.new(1, 0, 0, 16)
+Converted["_TXT1"].Name = "TXT"
+Converted["_TXT1"].Parent = Converted["_AudioInfo"]
+
+Converted["_UITextSizeConstraint3"].MaxTextSize = 8
+Converted["_UITextSizeConstraint3"].Parent = Converted["_TXT1"]
+
+Converted["_ID"].ClearTextOnFocus = false
+Converted["_ID"].CursorPosition = -1
+Converted["_ID"].PlaceholderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
+Converted["_ID"].PlaceholderText = "..."
+Converted["_ID"].Text = ""
+Converted["_ID"].TextEditable = false
+Converted["_ID"].TextScaled = true
+Converted["_ID"].TextWrapped = true
+Converted["_ID"].Active = false
+Converted["_ID"].BackgroundColor3 = Color3.fromRGB(225.00001698732376, 207.00001806020737, 164.00000542402267)
+Converted["_ID"].BorderColor3 = Color3.fromRGB(17.00000088661909, 17.00000088661909, 17.00000088661909)
+Converted["_ID"].Position = UDim2.new(0, 0, 0, 16)
+Converted["_ID"].Selectable = false
+Converted["_ID"].Size = UDim2.new(1, 0, 0, 16)
+Converted["_ID"].Name = "ID"
+Converted["_ID"].Parent = Converted["_AudioInfo"]
+
+Converted["_UITextSizeConstraint4"].MaxTextSize = 8
+Converted["_UITextSizeConstraint4"].Parent = Converted["_ID"]
+
+Converted["_GiveUp"].BackgroundColor3 = Color3.fromRGB(255, 244.0000158548355, 151.00000619888306)
+Converted["_GiveUp"].BorderColor3 = Color3.fromRGB(17.00000088661909, 17.00000088661909, 17.00000088661909)
+Converted["_GiveUp"].Position = UDim2.new(0, 3, 1, -27)
+Converted["_GiveUp"].Size = UDim2.new(1, -6, 0, 24)
+Converted["_GiveUp"].Name = "GiveUp"
+Converted["_GiveUp"].Parent = Converted["_InfoFrame"]
+
+Converted["_Text"].Text = "Quit"
+Converted["_Text"].TextScaled = true
+Converted["_Text"].TextWrapped = true
+Converted["_Text"].BackgroundColor3 = Color3.fromRGB(173.00000488758087, 172.00000494718552, 175.00000476837158)
+Converted["_Text"].BackgroundTransparency = 1
+Converted["_Text"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
+Converted["_Text"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_Text"].Name = "Text"
+Converted["_Text"].Parent = Converted["_GiveUp"]
+
+Converted["_UITextSizeConstraint5"].MaxTextSize = 8
+Converted["_UITextSizeConstraint5"].Parent = Converted["_Text"]
+
+Converted["_CopyID"].BackgroundColor3 = Color3.fromRGB(255, 244.0000158548355, 151.00000619888306)
+Converted["_CopyID"].BorderColor3 = Color3.fromRGB(17.00000088661909, 17.00000088661909, 17.00000088661909)
+Converted["_CopyID"].Position = UDim2.new(0, 3, 1, -81)
+Converted["_CopyID"].Size = UDim2.new(1, -6, 0, 24)
+Converted["_CopyID"].Name = "CopyID"
+Converted["_CopyID"].Parent = Converted["_InfoFrame"]
+
+Converted["_Text1"].Text = "Copy ID"
+Converted["_Text1"].TextScaled = true
+Converted["_Text1"].TextWrapped = true
+Converted["_Text1"].BackgroundColor3 = Color3.fromRGB(173.00000488758087, 172.00000494718552, 175.00000476837158)
+Converted["_Text1"].BackgroundTransparency = 1
+Converted["_Text1"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
+Converted["_Text1"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_Text1"].Name = "Text"
+Converted["_Text1"].Parent = Converted["_CopyID"]
+
+Converted["_UITextSizeConstraint6"].MaxTextSize = 8
+Converted["_UITextSizeConstraint6"].Parent = Converted["_Text1"]
+
+Converted["_AudioInfo2"].BackgroundColor3 = Color3.fromRGB(173.00000488758087, 172.00000494718552, 175.00000476837158)
+Converted["_AudioInfo2"].BackgroundTransparency = 1
+Converted["_AudioInfo2"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
+Converted["_AudioInfo2"].Position = UDim2.new(0, 3, 0, 108)
+Converted["_AudioInfo2"].Size = UDim2.new(1, -6, 0, 0)
+Converted["_AudioInfo2"].Name = "AudioInfo2"
+Converted["_AudioInfo2"].Parent = Converted["_InfoFrame"]
+
+Converted["_TXT2"].Text = "Made By :"
+Converted["_TXT2"].TextScaled = true
+Converted["_TXT2"].TextWrapped = true
+Converted["_TXT2"].BackgroundColor3 = Color3.fromRGB(255, 214.00001764297485, 163.00000548362732)
+Converted["_TXT2"].BorderColor3 = Color3.fromRGB(17.00000088661909, 17.00000088661909, 17.00000088661909)
+Converted["_TXT2"].Size = UDim2.new(1, 0, 0, 16)
+Converted["_TXT2"].Name = "TXT"
+Converted["_TXT2"].Parent = Converted["_AudioInfo2"]
+
+Converted["_UITextSizeConstraint7"].MaxTextSize = 8
+Converted["_UITextSizeConstraint7"].Parent = Converted["_TXT2"]
+
+Converted["_VALUE"].ClearTextOnFocus = false
+Converted["_VALUE"].CursorPosition = -1
+Converted["_VALUE"].PlaceholderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
+Converted["_VALUE"].PlaceholderText = "..."
+Converted["_VALUE"].Text = ""
+Converted["_VALUE"].TextEditable = false
+Converted["_VALUE"].TextScaled = true
+Converted["_VALUE"].TextWrapped = true
+Converted["_VALUE"].Active = false
+Converted["_VALUE"].BackgroundColor3 = Color3.fromRGB(225.00001698732376, 207.00001806020737, 164.00000542402267)
+Converted["_VALUE"].BorderColor3 = Color3.fromRGB(17.00000088661909, 17.00000088661909, 17.00000088661909)
+Converted["_VALUE"].Position = UDim2.new(0, 0, 0, 16)
+Converted["_VALUE"].Selectable = false
+Converted["_VALUE"].Size = UDim2.new(1, 0, 0, 16)
+Converted["_VALUE"].Name = "VALUE"
+Converted["_VALUE"].Parent = Converted["_AudioInfo2"]
+
+Converted["_UITextSizeConstraint8"].MaxTextSize = 8
+Converted["_UITextSizeConstraint8"].Parent = Converted["_VALUE"]
+
+Converted["_AudioInfo3"].BackgroundColor3 = Color3.fromRGB(173.00000488758087, 172.00000494718552, 175.00000476837158)
+Converted["_AudioInfo3"].BackgroundTransparency = 1
+Converted["_AudioInfo3"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
+Converted["_AudioInfo3"].Position = UDim2.new(0, 3, 0, 73)
+Converted["_AudioInfo3"].Size = UDim2.new(1, -6, 0, 0)
+Converted["_AudioInfo3"].Name = "AudioInfo3"
+Converted["_AudioInfo3"].Parent = Converted["_InfoFrame"]
+
+Converted["_TXT3"].Text = "Audio Speed :"
+Converted["_TXT3"].TextScaled = true
+Converted["_TXT3"].TextWrapped = true
+Converted["_TXT3"].BackgroundColor3 = Color3.fromRGB(255, 214.00001764297485, 163.00000548362732)
+Converted["_TXT3"].BorderColor3 = Color3.fromRGB(17.00000088661909, 17.00000088661909, 17.00000088661909)
+Converted["_TXT3"].Size = UDim2.new(1, 0, 0, 16)
+Converted["_TXT3"].Name = "TXT"
+Converted["_TXT3"].Parent = Converted["_AudioInfo3"]
+
+Converted["_UITextSizeConstraint9"].MaxTextSize = 8
+Converted["_UITextSizeConstraint9"].Parent = Converted["_TXT3"]
+
+Converted["_VALUE1"].ClearTextOnFocus = false
+Converted["_VALUE1"].CursorPosition = -1
+Converted["_VALUE1"].PlaceholderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
+Converted["_VALUE1"].PlaceholderText = "..."
+Converted["_VALUE1"].Text = ""
+Converted["_VALUE1"].TextEditable = false
+Converted["_VALUE1"].TextScaled = true
+Converted["_VALUE1"].TextWrapped = true
+Converted["_VALUE1"].Active = false
+Converted["_VALUE1"].BackgroundColor3 = Color3.fromRGB(225.00001698732376, 207.00001806020737, 164.00000542402267)
+Converted["_VALUE1"].BorderColor3 = Color3.fromRGB(17.00000088661909, 17.00000088661909, 17.00000088661909)
+Converted["_VALUE1"].Position = UDim2.new(0, 0, 0, 16)
+Converted["_VALUE1"].Selectable = false
+Converted["_VALUE1"].Size = UDim2.new(1, 0, 0, 16)
+Converted["_VALUE1"].Name = "VALUE"
+Converted["_VALUE1"].Parent = Converted["_AudioInfo3"]
+
+Converted["_UITextSizeConstraint10"].MaxTextSize = 8
+Converted["_UITextSizeConstraint10"].Parent = Converted["_VALUE1"]
+
+Converted["_Credit"].BackgroundColor3 = Color3.fromRGB(255, 244.0000158548355, 151.00000619888306)
+Converted["_Credit"].BorderColor3 = Color3.fromRGB(17.00000088661909, 17.00000088661909, 17.00000088661909)
+Converted["_Credit"].Position = UDim2.new(0, 3, 1, -54)
+Converted["_Credit"].Size = UDim2.new(1, -6, 0, 24)
+Converted["_Credit"].Name = "Credit"
+Converted["_Credit"].Parent = Converted["_InfoFrame"]
+
+Converted["_Text2"].Text = "Credit"
+Converted["_Text2"].TextScaled = true
+Converted["_Text2"].TextWrapped = true
+Converted["_Text2"].BackgroundColor3 = Color3.fromRGB(173.00000488758087, 172.00000494718552, 175.00000476837158)
+Converted["_Text2"].BackgroundTransparency = 1
+Converted["_Text2"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
+Converted["_Text2"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_Text2"].Name = "Text"
+Converted["_Text2"].Parent = Converted["_Credit"]
+
+Converted["_UITextSizeConstraint11"].MaxTextSize = 8
+Converted["_UITextSizeConstraint11"].Parent = Converted["_Text2"]
+
+Converted["_Icon"].Image = "rbxassetid://550831565"
+Converted["_Icon"].ImageColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Icon"].BackgroundColor3 = Color3.fromRGB(172.00000494718552, 171.00000500679016, 174.00000482797623)
+Converted["_Icon"].BackgroundTransparency = 1
+Converted["_Icon"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
+Converted["_Icon"].Size = UDim2.new(0, 24, 0, 24)
+Converted["_Icon"].Name = "Icon"
+Converted["_Icon"].Parent = Converted["_MainFrame"]
+
+Converted["_AudioList"].AutomaticCanvasSize = Enum.AutomaticSize.XY
+Converted["_AudioList"].CanvasSize = UDim2.new(0, 0, 0, 0)
+Converted["_AudioList"].ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_AudioList"].ScrollBarThickness = 0
+Converted["_AudioList"].Active = true
+Converted["_AudioList"].AnchorPoint = Vector2.new(0.5, 0)
+Converted["_AudioList"].BackgroundColor3 = Color3.fromRGB(225.00001698732376, 207.00001806020737, 164.00000542402267)
+Converted["_AudioList"].BackgroundTransparency = 0.5
+Converted["_AudioList"].BorderColor3 = Color3.fromRGB(17.00000088661909, 17.00000088661909, 17.00000088661909)
+Converted["_AudioList"].Position = UDim2.new(0.5, -50, 0, 25)
+Converted["_AudioList"].Size = UDim2.new(1, -104, 1, -27)
+Converted["_AudioList"].Name = "AudioList"
+Converted["_AudioList"].Parent = Converted["_MainFrame"]
+
+Converted["_UIListLayout"].Padding = UDim.new(0, 3)
+Converted["_UIListLayout"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_UIListLayout"].Parent = Converted["_AudioList"]
+
+Converted["_UIPadding"].PaddingLeft = UDim.new(0, 2)
+Converted["_UIPadding"].PaddingTop = UDim.new(0, 2)
+Converted["_UIPadding"].Parent = Converted["_AudioList"]
+
+Converted["_DropShadowHolder"].BackgroundTransparency = 1
+Converted["_DropShadowHolder"].BorderSizePixel = 0
+Converted["_DropShadowHolder"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_DropShadowHolder"].ZIndex = 0
+Converted["_DropShadowHolder"].Name = "DropShadowHolder"
+Converted["_DropShadowHolder"].Parent = Converted["_MainFrame"]
+
+Converted["_DropShadow"].Image = "rbxassetid://6015897843"
+Converted["_DropShadow"].ImageColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_DropShadow"].ImageTransparency = 0.5
+Converted["_DropShadow"].ScaleType = Enum.ScaleType.Slice
+Converted["_DropShadow"].SliceCenter = Rect.new(49, 49, 450, 450)
+Converted["_DropShadow"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_DropShadow"].BackgroundTransparency = 1
+Converted["_DropShadow"].BorderSizePixel = 0
+Converted["_DropShadow"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_DropShadow"].Size = UDim2.new(1, 47, 1, 47)
+Converted["_DropShadow"].ZIndex = 0
+Converted["_DropShadow"].Name = "DropShadow"
+Converted["_DropShadow"].Parent = Converted["_DropShadowHolder"]
+
+Converted["_RestoreDown"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_RestoreDown"].BackgroundColor3 = Color3.fromRGB(255, 244.0000158548355, 151.00000619888306)
+Converted["_RestoreDown"].BorderColor3 = Color3.fromRGB(17.00000088661909, 17.00000088661909, 17.00000088661909)
+Converted["_RestoreDown"].Position = UDim2.new(1, -5, 0.5, 0)
+Converted["_RestoreDown"].Rotation = -90
+Converted["_RestoreDown"].Size = UDim2.new(0, 284, 0, 12)
+Converted["_RestoreDown"].Name = "RestoreDown"
+Converted["_RestoreDown"].Parent = Converted["_AudioLoggah"]
+
+Converted["_Text3"].Text = "V"
+Converted["_Text3"].TextScaled = true
+Converted["_Text3"].TextWrapped = true
+Converted["_Text3"].BackgroundColor3 = Color3.fromRGB(173.00000488758087, 172.00000494718552, 175.00000476837158)
+Converted["_Text3"].BackgroundTransparency = 1
+Converted["_Text3"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
+Converted["_Text3"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_Text3"].Name = "Text"
+Converted["_Text3"].Parent = Converted["_RestoreDown"]
+
+Converted["_UITextSizeConstraint12"].MaxTextSize = 8
+Converted["_UITextSizeConstraint12"].Parent = Converted["_Text3"]
+
+local fake_module_scripts = {}
+
+local function CERPZB_fake_script() -- Fake Script: Workspace.AudioLoggah.MainFrame.TitleBar.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_TitleBar"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local dragHeader = script.Parent
+	local frame = script.Parent.Parent
+	
+	local dragging, dragInput, dragStart, startPos
+	
+	dragHeader.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragging = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	dragHeader.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement then
+			dragInput = input
+		end
+	end)
+	
+	game:GetService("UserInputService").InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			local delta = input.Position - dragStart
+			frame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		end
+	end)
+end
+local function EAQYT_fake_script() -- Fake Script: Workspace.AudioLoggah.MainFrame.InfoFrame.Frame.TXT.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_TXT"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local List = script.Parent.Parent.Parent.Parent.AudioList
+	
+	function createUI(assetid)
+		local Audio = Instance.new("TextButton")
+		local stroke = Instance.new("UIStroke")
+		local txtsetscale = Instance.new("UITextSizeConstraint")
+	
+		local str = assetid
+		local numbers = {}
+	
+		for num in string.gmatch(str, "%d+") do
+			table.insert(numbers, tonumber(num))
+		end
+	
+		for _, number in ipairs(numbers) do
+			local Asset = game:GetService("MarketplaceService"):GetProductInfo(number)
+	
+			Audio.Name = "Audio"
+			Audio.Parent = List
+			Audio.BackgroundColor3 = Color3.fromRGB(225, 207, 164)
+			Audio.BorderColor3 = Color3.fromRGB(0, 0, 0)
+			Audio.BorderSizePixel = 0
+			Audio.Size = UDim2.new(1, -4, 0, 25)
+			Audio.Font = Enum.Font.Arial
+			Audio.Text = Asset.Name
+			Audio.TextColor3 = Color3.fromRGB(27, 42, 53)
+			Audio.TextScaled = true
+			Audio.TextTruncate = Enum.TextTruncate.AtEnd
+			Audio.TextStrokeTransparency = 1
+			Audio.MouseButton1Click:Connect(function()
+				script.Parent.Parent.Parent.AudioInfo.ID.Text = number
+				script.Parent.Parent.Parent.AudioInfo2.VALUE.Text = Asset.Creator.Name
+				script.Parent.Parent.Parent.AudioInfo3.VALUE.Text = Asset.PlaybackSpeed
+			end)
+			
+			stroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+			stroke.Color = Color3.fromRGB(17,17,17)
+			stroke.Thickness = 1
+			stroke.Transparency = 0.5
+			stroke.Parent = Audio
+			stroke.LineJoinMode = Enum.LineJoinMode.Round
+			
+			txtsetscale.MaxTextSize = 14
+			txtsetscale.MinTextSize = 1
+			txtsetscale.Parent = Audio
+		end
+	
+		return Audio	
+	end
+	
+	script.Parent.MouseButton1Click:Connect(function() 
+		for x, y in pairs(List:GetChildren()) do
+			if y.Name == "Audio" then
+				y:Destroy()
+			end
+		end
+	
+		for i, v in pairs(game:GetDescendants()) do
+			if v.Name == "Music" then
+				task.wait()
+				createUI(v.SoundId)
+			end
+		end
+	end)
+end
+local function LPIXXP_fake_script() -- Fake Script: Workspace.AudioLoggah.MainFrame.InfoFrame.GiveUp.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_GiveUp"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent:Destroy()
+	end)
+end
+local function GLVMNMQ_fake_script() -- Fake Script: Workspace.AudioLoggah.MainFrame.InfoFrame.CopyID.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_CopyID"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local StarterGui = game:GetService("StarterGui")
+	local everyClipboard = setclipboard or toclipboard or set_clipboard or (Clipboard and Clipboard.set)
+	
+	function toClipboard(txt)
+		if everyClipboard then
+			everyClipboard(tostring(txt))
+			StarterGui:SetCore("SendNotification", {
+				Title = "ID Copied";
+				Text = "said Logger";
+				Duration = 5;
+			})
+		else
+			StarterGui:SetCore("SendNotification", {
+				Title = "Problem";
+				Text = "Your exploit does not have the ability to copy this, copy manual instead";
+				Duration = 5;
+			})
+		end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		toClipboard(script.Parent.Parent.AudioInfo.ID.Text)
+	end)
+end
+local function TEVARN_fake_script() -- Fake Script: Workspace.AudioLoggah.MainFrame.InfoFrame.Credit.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_Credit"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local StarterGui = game:GetService("StarterGui")
+		StarterGui:SetCore("SendNotification", {
+			Title = "Made by @SKEPPY0_0MAN";
+			Text = "Discord: frzfrsy\nWhatsapp: +60 13-503 6056";
+			Button1 = "ok, great script btw",
+			Duration = math.huge;
+		})
+	end)
+end
+local function YAEDV_fake_script() -- Fake Script: Workspace.AudioLoggah.RestoreDown.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_RestoreDown"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local aa = script.Parent.Parent.MainFrame
+	local enable = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if enable == false then
+			aa.Visible = false
+			script.Parent.Rotation = 90
+			
+			enable = true
+		else
+			aa.Visible = true
+			aa.Position = UDim2.new(0.5, 0, 0.5, 0)
+			script.Parent.Rotation = -90
+			
+			enable = false
+		end
+	end)
+end
+
+coroutine.wrap(CERPZB_fake_script)()
+coroutine.wrap(EAQYT_fake_script)()
+coroutine.wrap(LPIXXP_fake_script)()
+coroutine.wrap(GLVMNMQ_fake_script)()
+coroutine.wrap(TEVARN_fake_script)()
+coroutine.wrap(YAEDV_fake_script)()
