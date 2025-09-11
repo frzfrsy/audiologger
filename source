@@ -496,7 +496,7 @@ local function EAQYT_fake_script() -- Fake Script: Workspace.AudioLoggah.MainFra
 		for i, v in pairs(game:GetDescendants()) do
 			if v.Name == "Music" then
 				task.wait()
-				createUI(v.SoundId)
+				createUI(v.AssetId)
 			end
 		end
 	end)
