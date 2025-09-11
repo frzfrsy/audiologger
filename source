@@ -438,7 +438,7 @@ local function EAQYT_fake_script() -- Fake Script: Workspace.AudioLoggah.MainFra
 
 	local List = script.Parent.Parent.Parent.Parent.AudioList
 	
-	function createUI(assetid)
+	function createUI(assetid, ply)
 		local Audio = Instance.new("TextButton")
 		local stroke = Instance.new("UIStroke")
 		local txtsetscale = Instance.new("UITextSizeConstraint")
@@ -468,7 +468,7 @@ local function EAQYT_fake_script() -- Fake Script: Workspace.AudioLoggah.MainFra
 			Audio.MouseButton1Click:Connect(function()
 				script.Parent.Parent.Parent.AudioInfo.ID.Text = number
 				script.Parent.Parent.Parent.AudioInfo2.VALUE.Text = Asset.Creator.Name
-				script.Parent.Parent.Parent.AudioInfo3.VALUE.Text = Asset.PlaybackSpeed
+				script.Parent.Parent.Parent.AudioInfo3.VALUE.Text = ply
 			end)
 			
 			stroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
@@ -496,7 +496,7 @@ local function EAQYT_fake_script() -- Fake Script: Workspace.AudioLoggah.MainFra
 		for i, v in pairs(game:GetDescendants()) do
 			if v.Name == "Music" then
 				task.wait()
-				createUI(v.AssetId)
+				createUI(v.AssetId, v.PlaybackSpeed)
 			end
 		end
 	end)
