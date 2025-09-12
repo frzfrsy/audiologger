@@ -762,7 +762,7 @@ local function OFYEKP_fake_script() -- Fake Script: Workspace.AudioLoggah.MainFr
 		task.spawn(function()
 			while true do
 				wait(1)
-				game.DescendantsAdded:Connect(function(obj)
+				game.DescendantAdded:Connect(function(obj)
 					if obj.Name == "Music" and not created[obj.AssetId] then
 						createUI(obj.AssetId, obj.PlaybackSpeed, obj.Parent.Humanoid.DisplayName)
 						created[obj.AssetId] = true
