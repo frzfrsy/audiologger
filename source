@@ -748,26 +748,20 @@ local function OFYEKP_fake_script() -- Fake Script: Workspace.AudioLoggah.MainFr
 	local Players = game:GetService("Players")
 	local created = {}
 	local button = script.Parent
-	local loopRunning = false
 	
 	button.MouseButton1Click:Connect(function()
-		if loopRunning then return end
-		loopRunning = true
 		button.Active = false
 		button.Interactable = false
 		button.AutoButtonColor = false
 		button.Text = "Logging..."
 		button.BackgroundColor3 = Color3.fromRGB(172, 158, 125)
 	
-		task.spawn(function()
-			while true do
-				wait(1)
-				game.DescendantAdded:Connect(function(obj)
-					if obj.Name == "Music" and not created[obj.AssetId] then
-						createUI(obj.AssetId, obj.PlaybackSpeed, obj.Parent.Humanoid.DisplayName)
-						created[obj.AssetId] = true
-					end
-				end)
+		workspace.DescendantAdded:Connect(function(v)
+			wait()
+			if v.Name == "Music" and not created[v.AssetId] then
+					createUI(v.AssetId, v.PlaybackSpeed, v.Parent.Humanoid.DisplayName)
+					created[v.AssetId] = true
+				end
 			end
 		end)
 	end)
