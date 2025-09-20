@@ -580,17 +580,14 @@ Converted["_TextLabel"].Parent = Converted["_ScrollingFrame"]
 Converted["_UIPadding1"].PaddingLeft = UDim.new(0, 4)
 Converted["_UIPadding1"].Parent = Converted["_TextLabel"]
 
-Converted["_Hi"].AudioContent = Content
 Converted["_Hi"].SoundId = "rbxassetid://82845990304289"
 Converted["_Hi"].Name = "Hi"
 Converted["_Hi"].Parent = Converted["_AudioLoggah"]
 
-Converted["_hovers"].AudioContent = Content
 Converted["_hovers"].SoundId = "rbxassetid://119354387183704"
 Converted["_hovers"].Name = "hovers"
 Converted["_hovers"].Parent = Converted["_AudioLoggah"]
 
-Converted["_clicking"].AudioContent = Content
 Converted["_clicking"].SoundId = "rbxassetid://3848738002"
 Converted["_clicking"].Name = "clicking"
 Converted["_clicking"].Parent = Converted["_AudioLoggah"]
